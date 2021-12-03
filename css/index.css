@@ -1,0 +1,78 @@
+/* Define inline-block elements */
+header {
+    background-color: #373738;
+}
+
+.inline-block { 
+                display: inline-block; 
+            }
+
+.logo {
+    width: 23%;
+    display: inline-block;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.nav_button {
+                display: inline;
+                vertical-align: top;
+                padding: 10px;
+                border: 1px;
+                border-radius: 5px;
+                border-style: solid;
+                border-color: whitesmoke;
+                color:whitesmoke;
+}
+
+nav {
+    padding: 10px;
+    margin: auto;
+    float: right;
+}
+
+nav > ul {
+    padding: 0 0 0 0;
+}
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+
+.theContent {
+    width: 500px;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+footer {
+    background-color: #373738;
+}
+
+footer > ul {
+    vertical-align: top;
+}
+
+footer > ul > li {
+    display: inline-block;
+    color: whitesmoke;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: whitesmoke;
+}
+
+.center_text {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
