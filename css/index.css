@@ -8,7 +8,7 @@ header {
             }
 
 .logo {
-    width: 23%;
+    width: 40%;
     display: inline-block;
     text-align: center;
     color: whitesmoke;
@@ -75,4 +75,39 @@ footer > ul > li {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.lightblue-button {
+    padding: 6px 6px 6px 6px;
+    background-color: lightblue;
+}
+
+.font-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 1000;
+}
+
+.font-button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 1000;
+}
+
+.font-footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.font-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 1000;
+}
+
+.font-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 2000;
 }
