@@ -44,6 +44,7 @@
 
     --menu-item-a-font-size: 14px;
     --menu-item-a-margin: 12px 0px 0px 0px;
+    --menu-item-i-font-size: xx-large;
 
 
     --experience-panel-background-color: var(--color-text-3);
@@ -55,6 +56,7 @@
 
     --panel-social-media-background-color: transparent;
     --panel-social-media-text-color: var(--color-forward);
+    --panel-social-media-font-size: xx-large;
 }
 
 body {
@@ -114,6 +116,10 @@ body {
     text-decoration: none;
     font-size: 14px;
     color: var(--menu-text-color);
+}
+
+.menu-item > i {
+    font-size: var(--menu-item-i-font-size);
 }
 
 #menu-1 {
@@ -196,6 +202,10 @@ body {
     min-height: 0px;
 }
 
+#social-media > i {
+    font-size: var(--panel-social-media-font-size);
+}
+
 @media screen and (max-width: 600px) {
     :root {
         --header-name-h1-font-size: 36px;
@@ -206,9 +216,12 @@ body {
 
         --menu-item-a-font-size: 12px;
         --menu-item-a-margin: 10px 0px 0px 0px;
+        --menu-item-i-font-size: x-large;
 
         --panel-h1-font-size: 28px;
         --panel-p-font-size: 18px;
+
+        --panel-social-media-font-size: x-large;
     }
 
     #header-container {
@@ -222,11 +235,6 @@ body {
     .menu-item > a {
         display: none;
     }
-
-    .menu-item > i {
-        font-size: x-large;
-    }
-
 
     #panelsGridContainer {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 100px;
