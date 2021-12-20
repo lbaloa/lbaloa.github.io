@@ -14,6 +14,8 @@
 
     --color-forward: var(--color-text-2);
 
+    --nav-link-i-icon-size: x-large;
+
     --header-margin: 2px;
     --header-text-color: var(--color-forward);
     --header-background-color: transparent;
@@ -61,6 +63,39 @@
 
 body {
     font-family: var(--font-family);
+}
+
+.customNav {
+    background-color: var(--customNav-background-color) !important;
+}
+
+.navbar-brand {
+    font-size: var(--header-name-h1-font-size);
+    font-weight: var(--header-name-h1-weight); 
+    color: var(--color-forward) !important;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+}
+
+.nav-link {
+    color: var(--color-forward) !important;
+}
+
+.nav-link:hover{
+    color: var(--nav-link-hover-color) !important;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-link > i {
+    font-size: var(--nav-link-i-icon-size);
 }
 
 #header-container {
@@ -206,7 +241,7 @@ body {
     font-size: var(--panel-social-media-font-size);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     :root {
         --header-name-h1-font-size: 36px;
         --header-name-h1-weight: 1000;
@@ -229,7 +264,7 @@ body {
     }
 
     body {
-        background-color: var(--color-light-blue);
+        /*background-color: var(--color-light-blue); */
     }
 
     .menu-item > a {
@@ -278,4 +313,17 @@ body {
     #social-media > i {
         font-size: x-large;
     }
+    
+    .nav-link {
+        flex-direction: row-reverse;
+    }
+
+    .nav-link span {
+        padding: 0px 10px 0px 5px;
+    }
+
+    .nav-link i {
+        padding: 0px 15px 0px 0px;
+    }
+    
 }
