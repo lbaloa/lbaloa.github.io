@@ -1,0 +1,228 @@
+:root {
+
+    /*** UI Style guide ***/
+    --color-dark-blue: #3D5B6C;
+    --color-light-blue: #5B8EAB;
+    --color-dark-green: #75C8CD;
+    --color-light-green: #75CD9E;
+    --color-orange: #E2A03B;
+    --color-yellow: #D3CD3B;
+
+    --color-text-1: #212429;
+    --color-text-2: #495057;
+    --color-text-3: #ACB5BD;
+    --color-text-4: #DDE2E5;
+    --color-text-5: #F8F9FA;
+    
+    /*** Fonts ***/
+    --font-family: 'Roboto', sans-serif;
+ 
+    
+    /*** Jumbotron ***/
+    --jumbotron-color: var(--color-text-4);
+
+
+    /*** Navigation properties ***/
+    --navbar-color: var(--color-text-3);
+
+    --navbar-brand-font-size: 32px;
+    --navbar-brand-font-weight: 1000;
+
+    --navbar-brand-font-size-sm: 24px;
+    --navbar-brand-font-weight-sm: 500;
+    
+    --customNav-background-color: var(--color-text-5);
+    
+    --nav-link-i-icon-size: x-large;
+    --nav-link-hover-color: var(--color-text-2);
+
+    /*** Card Properties ***/
+    --card-color: var(--color-text-5);
+    --btn-color-blue: var(--color-light-blue);
+    --btn-color-green: var(--color-light-green);
+} 
+
+.bg-dark-blue {
+    background-color: var(--color-dark-blue);
+}
+
+.bg-light-blue {
+    background-color: var(--color-light-blue);   
+}
+
+.color-default {
+    color: var(--color-text-3);
+}
+
+.color-light {
+    color: var(--color-text-4);
+}
+
+.color-superlight {
+    color: var(--color-text-5);
+}
+
+.btn-color-blue {
+    background-color: var(--btn-color-blue);
+    border-color: var(--btn-color-blue);
+}
+
+.btn-color-green {
+    background-color: var(--btn-color-green);
+    border-color: var(--btn-color-green);
+}
+
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-light-blue);
+    color: var(--navbar-color) !important;
+}
+
+.navbar {
+    color: var(--navbar-color);
+}
+
+.customNav {
+    background-color: transparent !important;
+}
+
+.navbar-brand {
+    font-size: var(--navbar-brand-font-size);
+    font-weight: var(--navbar-brand-font-weight);     
+    color: var(--navbar-color) !important;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+}
+
+.nav-link {
+    color: var(--navbar-color) !important;
+}
+
+.nav-link span {
+    padding: 0px 10px 0px 5px;
+}
+
+.nav-link > i {
+    font-size: var(--nav-link-i-icon-size);
+    padding: 0px 15px 0px 0px;
+}
+
+.nav-link:hover{
+    color: var(--nav-link-hover-color) !important;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(../images/Hero-image-keyboard.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: var(--jumbotron-color);
+}
+
+.jumbotron-resume {
+    height: calc(30vh - 25px); 
+}
+
+
+/* Cards */
+.card {
+    border: 0;
+    border-radius: 0 !important;
+    padding: 15px !important;
+    color: var(--card-color);
+}
+
+.card-body {
+    padding: 60px 20px 20px 20px;
+}
+
+.card-img {
+    height: calc(70vh - 25px);
+}
+
+.btn-card-container {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 25vh 0 0 0;
+}
+
+.content {
+    padding: 40px;
+}
+
+.sectionHeading {
+    text-align: center;
+    margin: 0px 0px 64px 0px;
+}
+.cardTitle  {
+    padding: 0px 30px 30px 30px;
+}
+.cardContainer {
+    text-align: center;
+}
+
+/*** iPad ***/
+
+@media screen and (max-width: 767px) {
+    
+    .nav-link {
+        flex-direction: row-reverse;
+    }
+
+    .display-2 {
+        font-size: 250%;
+    }
+
+    .lead {
+        font-size: 100%;
+    }
+
+    .blockquote {
+        font-size: 80%;
+    }
+
+    .btn-lg {
+        font-size: 80%;
+    }
+}
+
+/*** iPhone ***/
+
+@media screen and (max-width: 375px) {
+    .navbar-brand {
+        font-size: var(--navbar-brand-font-size-sm);
+        font-weight: var(--navbar-brand-font-weight-sm);  
+    }
+
+    .display-2 {
+        font-size: 150%;
+    }
+
+    .lead {
+        font-size: 75%;
+    }
+
+    .blockquote {
+        font-size: 60%;
+    }
+
+    .btn-lg {
+        font-size: 60%;
+    }
+}
