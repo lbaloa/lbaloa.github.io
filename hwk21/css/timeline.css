@@ -1,5 +1,7 @@
 :root {
-    --timeline-background-color: var(--color-text-2); /*#212121;*/
+    --timeline-background-color: white; /*#212121;*/
+    --timeline-background-color-2: var(--color-text-5);
+    --timeline-line-color: var(--color-dark-blue);
     --background-color: #111;
     --timeline-font-family: sans-serif;
     --info-background: #333;
@@ -8,6 +10,29 @@
     --border-width: 5px;
 
     --card-max-width: 95%;
+}
+
+.marketing-colors {
+    --timeline-line-color: var(--color-light-blue) !important;
+}
+
+.product-development-colors {
+  --timeline-line-color: var(--color-dark-blue) !important;
+}
+
+.patents-colors {
+  --timeline-line-color: var(--color-dark-green) !important;
+}
+
+.education-colors {
+  --timeline-line-color: var(--color-light-green) !important;
+}
+
+a.nav-link.active {
+  color: white !important;
+  background-color: var(--timeline-line-color) !important;
+  text-decoration:none !important;
+  font-weight: bold !important;
 }
 
 /* Timeline Container */
@@ -36,7 +61,7 @@
     content: "";
     position: absolute;
     width: 50%;
-    border: solid orangered;
+    border: solid var(--timeline-line-color);
   }
   
   /* Setting the border of top, bottom, left */
@@ -76,12 +101,12 @@
     border-bottom: 0;
     border-bottom-right-radius: 0;
   }
-  
+
   /* Information about the timeline */
   .info {
     display: flex;
     flex-direction: column;
-    background: #333;
+    background: var(--timeline-background-color-2);
     color: gray;
     border-radius: 10px;
     padding: 10px;
@@ -89,7 +114,7 @@
   
   /* Title of the card */
   .title {
-    color: orangered;
+    color: var(--timeline-line-color);
     position: relative;
     font-size: large;
   }
@@ -102,7 +127,7 @@
     height: 10px;
     background: white;
     border-radius: 999px;
-    border: 3px solid orangered;
+    border: 3px solid var(--timeline-line-color);
   }
   
   /* text right if the card is even  */
@@ -110,6 +135,10 @@
     text-align: right;
   }
   
+  .card:nth-child(even) > .info > p {
+    text-align: right;
+  }
+
   /* setting dot to the left if the card is odd */
   .card:nth-child(odd) > .info > .title::before {
     left: -43px;
